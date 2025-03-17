@@ -1,0 +1,1119 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primaryblack: black;
+  --primarywhite: white;
+}
+
+/* ---------------------YO! 1ST SECTION HERO SECTION---------------- */
+
+/*-------------------NAVBAR-----------------------  */
+
+header .logoContainer {
+  color: white;
+}
+
+header .logoContainer a {
+  color: white;
+  font-size: 2vw;
+}
+
+header nav {
+  height: 5vw;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.3); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  right: 34px;
+}
+/* header nav ul li {} */
+header nav ul li a {
+  color: var(--primarywhite);
+  font-size: 1.2vw;
+}
+
+.contactBtnContainer img {
+  width: 18px;
+  margin-right: 4px;
+  position: relative;
+  top: 1px;
+}
+
+.contactBtnContainer button {
+  color: black;
+  background-color: #fff;
+  font-size: 1.3vw;
+  letter-spacing: -1px;
+
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: .3s;
+}
+
+.contactBtnContainer button:hover {
+  background-color: rgb(248, 248, 248);
+  scale: 1.059;
+}
+
+/*-------------------------------------herosection----------------------------------  */
+
+.heroSection {
+  background-image: url(Images/hero\ bg.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.heroSectionContainer {
+  padding-top: 9vw;
+}
+
+.h1Container {
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+.h1Container {
+  /* opacity: 0; */
+  /* transform: translateY(20px); */
+  animation: fadeSlideIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.h1Container h1 {
+  color: var(--primarywhite);
+  font-size: 5.7vw;
+  line-height: 68px;
+
+  width: 80%;
+  line-height: 5.5vw;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.h3Container {
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+.h3Container h3 {
+  color: var(--primarywhite);
+  font-size: 1.5vw;
+
+  line-height: 2vw;
+}
+
+.getStartedBtnContainer button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between text and image */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* padding: 12px 60px 14px; */
+  padding-inline: 20px;
+  color: white;
+  letter-spacing: -9.5px;
+  background: rgba(0, 0, 0, 0.3); /* Transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  font-size: 1.5vw;
+  /* border: 1px solid white; */
+  border-radius: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  /* transition: color 0.4s ease-in-out; */
+  z-index: 1;
+}
+
+.getStartedBtnContainer:active {
+  transform: scale(0.95);
+}
+
+/* Image styles */
+.getStartedBtnContainer button img {
+  width: 1.3vw;
+  position: relative;
+  top: 0.8px;
+  transition: all .3s linear;
+}
+
+/* Change image on hover */
+.getStartedBtnContainer button:hover img {
+  scale: 1.1;
+  transform: rotate(-36deg);  
+}
+
+
+.button-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 4.5vw;
+  border-radius: 48px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0.1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button {
+  position: relative;
+  border-radius: 25px;
+  /* background-color: #000; */
+  color: white;
+  background: rgba(0, 0, 0, 0.3); /* Transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  font-size: 16px;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+.button-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 800%;
+  background: conic-gradient(
+    transparent 0deg,
+    white 90deg,
+    transparent 180deg,
+    transparent 360deg
+  );
+  animation: rotate-border 2s linear infinite;
+}
+
+.button-container::after {
+  content: "";
+  position: absolute;
+  inset: 1.6px;
+  border-radius: 36px;
+  background-color: #000;
+  z-index: 0;
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.discordBubblesContainer {
+  display: flex;
+  justify-content: center;
+  color: white;
+
+  margin-bottom: 2vw;
+}
+
+.bubblesPosition {
+  margin-right: -12px;
+}
+
+.discordImageContainerred {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  bottom: 4px;
+
+  background-color: crimson;
+  border-radius: 50%;
+}
+.discordImageContainerblue {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  bottom: 4px;
+
+  background-color: cornflowerblue;
+  border-radius: 50%;
+}
+.discordImageContaineryellow {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  bottom: 4px;
+
+  background-color: gold;
+  border-radius: 50%;
+}
+.discordImageContainerwhite {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  bottom: 4px;
+
+  background-color: white;
+  border-radius: 50%;
+}
+.discordImageContainerorange {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  bottom: 4px;
+
+  background-color: coral;
+  border-radius: 50%;
+}
+
+.discordBubblesContainer h4 {
+  margin-left: 20px;
+  font-size: 1.6vw;
+}
+
+.bubblesPosition {
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+.bubblesPosition:hover {
+  transform: translateY(-10px);
+}
+
+.main3Elements {
+  gap: 8rem;
+  flex-wrap: wrap;
+}
+.main3Elements h4 {
+  color: white;
+}
+
+.firstElementContainer img {
+  width: 50px;
+
+  position: relative;
+  top: 18px;
+  scale: 1.5;
+}
+.firstElementContainer h2 {
+  margin-bottom: -14px;
+}
+.number150M {
+  color: white;
+  font-size: 4.4vw;
+  letter-spacing: 3px;
+}
+
+.secondElementContainer {
+  position: relative;
+  /* right: 16px; */
+}
+
+.secondElementContainer img {
+  width: 50px;
+
+  position: relative;
+  top: 18px;
+  scale: 1.5;
+}
+.secondElementContainer h2 {
+  margin-bottom: -14px;
+}
+.number6 {
+  font-size: 4.4vw;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.thirdElementContainer {
+  position: relative;
+  /* right: 18px; */
+}
+.thirdElementContainer img {
+  width: 50px;
+
+  position: relative;
+  top: 14px;
+  left: 8px;
+  scale: 1.1;
+}
+.thirdElementContainer h2 {
+  color: white;
+  margin-bottom: -14px;
+}
+.number456 {
+  font-size: 4.4vw;
+  letter-spacing: 3px;
+}
+
+/* ======================== -S E C O N D - P A G E- ========================================== */
+
+.secondPage {
+  padding-inline: 20px;
+  padding-top: 60px;
+  height: auto;
+}
+
+/* .secondPageContainer {} */
+.portfolioTextContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.portfolioText {
+  font-size: 6vw;
+  color: white;
+}
+
+/* ===================UNIVERSAL PORTFOLIO TAB SECTIONS==============  */
+
+.tabsContainer {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70vw;
+  font-family: poppins;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  background: linear-gradient(to right, black 10%, rgba(255, 255, 255, 0.263) 50%, black 90%);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+
+  backdrop-filter: blur(5px);
+  border-radius: 40px;
+}
+.tab {
+  padding: 12px 30px;
+  margin: 0 5px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  color: white;
+  /* transition: ease .4s; */
+}
+.tab:active {
+  scale: 0.9;
+}
+
+.active {
+  background: white;
+  color: black;
+  box-shadow: 0px 0px px rgba(255, 255, 255, 0.675);
+}
+.gallery {
+  display: none;
+  gap: 1vw;
+}
+
+
+/* =============THUMBNAIS SECTION====================== */
+.thumbGallery {
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 36px;
+  padding-inline: 60px;
+}
+
+.thumbScale {
+  transition: linear 0.2s;
+  cursor: pointer;
+}
+.thumbScale:hover {
+  scale: 1.05;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* background: darkgray; */
+  border-radius: 5px;
+}
+.show {
+  display: grid;
+}
+.show3 {
+  display: grid;
+}
+
+/* THUMBNAIL POPUP SETTINGS*/
+
+.thumb-thumbnail:hover {
+  transform: scale(1.01);
+}
+
+/* Popup styling (for thumbnails) */
+.thumb-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.3); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.thumb-popup-content {
+  position: relative;
+  width: 68vw;
+  height: auto;
+  /* max-width: 600px; */
+  padding: 20px;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.thumb-popup-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+/* EXTRA THUMBNAILS CONTAINER */
+.extraThumbnailsContainer {
+  height: auto;
+}
+.show2 {
+  display: grid;
+}
+
+
+
+/* ============= GRAPHIC SECTION ============= */
+
+.graphicGallery {
+  padding-inline: 60px;
+  columns: 240px;
+  gap: 10px;
+  padding-block: 36px;
+}
+.graphicGallery img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: linear 0.2s;
+  cursor: pointer;
+}
+
+.graphicScale:hover {
+  scale: 1.022;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+/* Popup Styles */
+.graphicPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1001;
+  cursor: pointer;
+
+  
+}
+
+.graphicPopup img {
+  max-width: 90vw;  /* Ensures the image is at most 90% of the viewport width */
+  max-height: 90vh; /* Ensures the image is at most 90% of the viewport height */
+  object-fit: contain; /* Maintains the aspect ratio without cropping */
+  border-radius: 10px;
+}
+
+.graphicPopup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*========================== PROJECT SECION =================================== */
+
+.projectGallery {
+  height: auto;
+  
+  grid-template-columns: repeat(3, 1fr);
+
+  padding: 3vw 9vw 3vw 5.2vw;
+  /* padding-right: 30vw; */
+  /* border: 1px solid wheat; */
+}
+
+.projectImageContainer {
+  width: 26vw;
+  height: 26vw;
+  
+  background: linear-gradient(to left, #2d2d2d, rgba(255, 255, 255, 0.318));
+  backdrop-filter: blur(5px);
+  
+  border-radius: 5px;
+  position: relative;
+
+  overflow: hidden;
+  margin-bottom: 1.5vw;
+}
+.projectImage {
+  width: 100%;
+  height: 100%;
+  
+  background: transparent;
+  transition: .3s;
+}
+
+.projectImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+.projectImageContainer:hover {
+  .projectImage {
+    transform: scale(1.1);
+  }
+}
+
+/* ==MAKING OF IMAGE HOVERING DETAILS */
+.projectImageContainer {
+  margin-bottom: -.1px;
+  position: relative; /* Ensure absolute positioning works inside */
+  display: inline-block;
+  
+  cursor: pointer;
+}
+
+.projectImageContainer h2,
+.projectImageContainer h4,
+.projectImageContainer .blackShadow {
+  display: none; /* Hide elements by default */
+  position: absolute;
+}
+
+.projectImageContainer h2 {
+  color: white;
+  font-size: 1.5vw;
+  left: 20px;
+  bottom: 20px;
+  z-index: 101;
+}
+
+.projectImageContainer h4 {
+  color: rgba(255, 255, 255, 0.779);
+  font-size: 1vw;
+  left: 20px;
+  bottom: 5px;
+  z-index: 101;
+}
+
+.projectImageContainer .blackShadow {
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  z-index: 100;
+}
+
+/* Show elements when hovering over the entire container */
+.projectImageContainer:hover h2,
+.projectImageContainer:hover h4,
+.projectImageContainer:hover .blackShadow {
+  display: block;
+}
+
+/* ======================== -T H I R D - P A G E- ======================== */
+
+.thirdPage {
+  height: auto;
+  padding-top: 92px;
+  padding-inline: 68px;
+}
+
+.thirdPageContainer {
+  padding-left: 26px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutMeText {
+  color: white;
+  text-align: center;
+
+  font-size: 3.5vw;
+  letter-spacing: -2px;
+}
+
+.aboutTextContainer {
+  padding-top: 12px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  width: 50%;
+  text-align: start;
+
+  /* border: 1px solid red; */
+}
+
+.aboutTextContainer h2 {
+  font-size: 1.5vw;
+  color: white;
+}
+
+.aboutTextContainer button {
+  position: relative;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between text and image */
+  margin-top: 36px;
+  margin-bottom: 20px;
+  padding: 12px 200px 14px;
+  color: white;
+  letter-spacing: -1px;
+  background: rgba(0, 0, 0, 0.3); /* Transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  font-size: 1.5vw;
+  border: 1px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.aboutTextContainer button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: left 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.aboutTextContainer button:hover::before {
+  left: 0;
+}
+
+.aboutTextContainer button:hover {
+  color: black;
+  font-weight: 600;
+}
+
+/* Image styles */
+.aboutTextContainer button img {
+  width: 18px;
+  position: relative;
+  top: 0.8px;
+  transition: filter 0.4s ease, transform 1s ease;
+}
+
+/* Change image on hover */
+.aboutTextContainer button:hover img {
+  filter: invert(1); /* Inverts color (black -> white, white -> black) */
+  scale: 1.2;
+  left: 6px;
+}
+
+.aboutImageContainer {
+  padding-top: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60%;
+  width: 50%;
+
+  /* border: 1px solid red; */
+  /* padding-bottom: 36px; */
+}
+
+.aboutImageContainer img {
+  height: 42vw;
+  width: 38vw;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  object-fit: cover;
+}
+
+
+
+
+
+/* ======================== -F O U R T H  - P A G E- ======================== */
+
+.forthPage {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  height: auto;
+}
+
+.forthPageContainer {
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.forthPageContainer h2 {
+  font-size: 4vw;
+  margin-bottom: 40px;
+}
+.forthPageContainer p {
+  text-align: center;
+  color: #bbb;
+}
+.faq-container {
+  width: 70vw;
+  margin: auto;
+  text-align: left;
+  height: auto;
+}
+.faq-item {
+  height: auto;
+  padding: 24px 16px;
+  padding-left: 28px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: 0.3s;
+}
+
+.faq-item:hover {
+  transform: scale(1.02); /* Slight scale effect */
+}
+.faq-item:active {
+  transform: scale(1); /* Remove scale effect */
+}
+
+.faq-item h3 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-in-out, padding .4s ease-in-out;
+  padding: 0px 10px;
+  padding-left: 0px;
+  color: #ccc;
+}
+
+/* ========================= P A G E  5 - S T A R T S ========================== */
+
+.fifthPage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  height: auto;
+  position: relative;
+}
+
+.fifthPageHeading {
+  margin-top: 44px;
+  text-align: center;
+  font-size: 3.7vw;
+  letter-spacing: -1.5px;
+  margin-bottom: 3vw;
+}
+
+
+.fifthPageContainer {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.contactTextContainer {
+  /* padding-top: 1.8vw; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  height: 100% ;
+  width: 50%;
+
+  text-align: center;
+  /* border: 1px solid greenyellow; */
+}
+
+
+.socialMediaHandlesTextContainer {
+  padding-top: 1.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  letter-spacing: 2px;
+  height: 88px;
+  margin-bottom: 3vw;
+}
+.socialMediaHandlesTextContainer h3 {
+  font-size: 1.6vw;
+}
+
+.socialMediaHandles {
+  height: 100%;
+  width: 90%;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 1em;
+}
+
+.socialMediaHandles a {
+  width: 100%;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5vw;
+  text-transform: uppercase;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+
+  transition: .5s;
+  padding: 1.2vw 4vw 1.2vw 10vw;
+  /* padding-left: 10vw; */
+}
+
+.socialMediaHandles img {
+  width: 2.4vw;
+}
+
+.socialMediaHandlesName {
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.socialMediaIconsHoverEffects:hover {
+  transform: scale(1.05); /* Slight scale effect */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+
+
+/* // FORM STARTS */
+.contactFormContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  text-align: start;
+
+  /* border: 1px solid red; */
+}
+
+.formText {
+  padding-top: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactFormContainer h3 {
+  text-align: center;
+  width: 80%;
+  font-size: 1.5vw;
+  padding-bottom: 24px;
+}
+
+.formParent {
+  width: 100%;
+  height: 100%;
+}
+
+.contactFormContainer input {
+  width: 100%;
+  padding: 12px 24px;
+  padding: 1.2vw 2vw 1.2vw 2vw;
+
+  color: white;
+  font-size: 1.2rem;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  outline: none;
+
+  margin-bottom: 1vw;
+}
+
+.contactFormContainer input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.3rem;
+}
+
+.contactFormContainer textarea {
+  height: 180px;
+  width: 100%;
+  padding: 10px 24px;
+
+  color: white;
+  font-size: 1.2rem;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  outline: none;
+
+  margin-bottom: 8px;
+}
+.contactFormContainer textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.3rem;
+}
+
+.contactFormContainer button {
+  width: 100%;
+  padding: 12px 200px 14px;
+  color: white;
+  letter-spacing: -1px;
+  background: rgba(0, 0, 0, 0.3 ); /* Transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  font-size: 1.5vw;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.contactFormContainer button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: left 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.contactFormContainer button:hover::before {
+  left: 0;
+}
+
+.contactFormContainer button:hover {
+  color: black;
+  font-weight: 600;
+}
+
+
+
+
+/* ====================== FOOTER BEGINS ============================ */
+
+footer {
+  height: 5vw;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+  padding-left: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+}
+
+
+
+footer h5 {
+  font-size: 1.1vw;
+  margin: 4px;
+}
+
+.xaayTheWeberFooter {
+  font-size: 1.1vw;
+  text-decoration: underline;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+

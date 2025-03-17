@@ -1,0 +1,13 @@
+.hiddenProject {
+    display: none;
+}
+.hiddenGraphic {
+    display: none;
+}
+
+.hideProjectViewMore {
+    display: none;
+}
+.showProjectViewMore {
+    display: block;
+}

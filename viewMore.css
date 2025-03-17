@@ -1,0 +1,129 @@
+.hidden {
+    display: none; /* Ensures hidden thumbnails don't take up space */
+}
+
+
+#viewMoreBtn img {
+    position: relative;
+    top: 4px;
+    right: 5px;
+    
+    width: 1.4vw;
+    rotate: 90deg;
+    transition: .2s;
+
+}
+
+#viewMoreBtn {
+    display: block;
+    margin: 20px auto 30px;
+    padding: 10px 20px;
+    width: 60vw;
+    background: #333;
+    background: linear-gradient(to right, black 10%, rgba(121, 121, 121, 0.263) 50%, black 90%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+
+    font-family: poppins;
+    font-weight: 600;
+}
+#viewMoreBtn:hover {
+    .viewMoreImg{
+        scale: 1.15;
+    }
+}
+
+
+
+
+
+#viewMoreBtn1 img {
+    position: relative;
+    top: 4px;
+    right: 5px;
+    
+    width: 1.4vw;
+    rotate: 90deg;
+    transition: .2s;
+
+}
+
+#viewMoreBtn1 {
+    display: block;
+    margin: 20px auto 30px;
+    padding: 10px 20px;
+    width: 60vw;
+    background: #333;
+    background: linear-gradient(to right, black 10%, rgba(121, 121, 121, 0.263) 50%, black 90%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+
+    font-family: poppins;
+    font-weight: 600;
+}
+#viewMoreBtn1:hover {
+    .viewMoreImg{
+        scale: 1.15;
+    }
+}
+
+
+
+#viewMoreBtn2 img {
+    position: relative;
+    top: 4px;
+    right: 5px;
+    
+    width: 1.4vw;
+    rotate: 90deg;
+    transition: .2s;
+
+}
+
+#viewMoreBtn2 {
+    display: block;
+    margin: 20px auto 30px;
+    padding: 10px 20px;
+    width: 60vw;
+    background: #333;
+    background: linear-gradient(to right, black 10%, rgba(121, 121, 121, 0.263) 50%, black 90%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 16px;
+
+    font-family: poppins;
+    font-weight: 600;
+}
+#viewMoreBtn2:hover {
+    .viewMoreImg{
+        scale: 1.15;
+    }
+}
+
+
+
+
+/* LOGIC FOR TABS WHEN OTHER THAN THUMB TAB IS CLICKED */
+.otherTabThanProject {
+    display: none;
+}
+
+.otherTabThanGraphics {
+    display: none;
+}
+
+.otherTab {
+    display: none;
+}
+
+.heroTab {
+    display: grid;
+}

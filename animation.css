@@ -1,0 +1,42 @@
+
+/* NAV BUTTONS HOVER EFFECT */
+.navHover{
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* transition: .1s; */
+    overflow: hidden;   
+}
+.navHover span{
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 35px #fff;
+    transition: transform 0.29s ease-in-out;
+    transform: translateY(0px);
+
+}
+.navHover:hover span.hover{
+    transform: translateY(-35px);
+}
+.navHover span.hover{
+    transform: translateY(-35px);
+    transition-delay: 0s; /* Remove delay for instant reaction */
+}
+ 
+ul {
+    overflow: hidden;
+}
+
+.heroBtn {
+    transition: .1s;
+    font-size: .9em;
+}
+  
+  
+
+
+
+
