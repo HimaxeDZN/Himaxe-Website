@@ -11,3 +11,8 @@
 .showProjectViewMore {
     display: block;
 }
+
+.san-serif {
+    font-family: sans-serif;
+    font-weight: 700;
+}

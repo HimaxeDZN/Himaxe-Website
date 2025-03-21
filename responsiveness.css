@@ -77,7 +77,7 @@
   /* ENDS NAV HEADER */
 
   .heroSection {
-    background-image: url(Images/hero\ bg.jpg);
+    /* background-image: url(Images/hero\ bg.jpg); */
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -87,6 +87,19 @@
   .heroSectionContainer {
     padding-top: 24vw;
   }
+  .hero-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -199;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+  }
+  
+  
 
   .h1Container h1 {
     width: 100%;
@@ -1401,7 +1414,7 @@ footer h5 {
   /* ENDS NAV HEADER */
 
   .heroSection {
-    background-image: url(Images/hero\ bg.jpg);
+    /* background-image: url(Images/hero\ bg.jpg); */
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -1411,6 +1424,19 @@ footer h5 {
   .heroSectionContainer {
     padding-top:  5.6rem;
   }
+  .hero-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -199;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* display: block; */
+  }
+  
+  
 
   .h1Container h1 {
     width: 100%;
@@ -2727,7 +2753,7 @@ footer h5 {
   /* ENDS NAV HEADER */
 
   .heroSection {
-    background-image: url(Images/hero\ bg.jpg);
+    /* background-image: url(Images/hero\ bg.jpg); */
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -2737,6 +2763,19 @@ footer h5 {
   .heroSectionContainer {
     padding-top:  5.6rem;
   }
+  .hero-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -199;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  
+  
 
   .h1Container h1 {
     width: 100%;
@@ -4045,7 +4084,7 @@ footer h5 {
   /* ENDS NAV HEADER */
 
   .heroSection {
-    background-image: url(Images/hero\ bg.jpg);
+    /* background-image: url(Images/hero\ bg.jpg); */
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -4055,6 +4094,19 @@ footer h5 {
   .heroSectionContainer {
     padding-top:  6.5rem;
   }
+  .hero-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -199;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  
+  
 
   .h1Container h1 {
     width: 100%;
@@ -5395,7 +5447,7 @@ footer h5 {
   /*-------------------------------------herosection----------------------------------  */
   
   .heroSection {
-    background-image: url(Images/hero\ bg.jpg);
+    /* background-image: url(Images/hero\ bg.jpg); */
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -5407,6 +5459,19 @@ footer h5 {
   .heroSectionContainer {
     padding-top: 7vw;
   }
+  .hero-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -199;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  
+  
   
   .h1Container {
     width: 100%;
